@@ -8,6 +8,7 @@ import SignUp from '../SignUp';
 import SignOut from '../SignOut';
 import SignIn from '../SignIn';
 import Chat from '../chatComponent';
+import Portfolio from '../Portfolio'
 
 
 import { connect } from 'react-redux';
@@ -25,7 +26,7 @@ class App extends Component {
       <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
         <Grid.Column style={{ maxWidth: 700 }}>
           <Navbar isLoggedIn={this.props.authenticated}/>
-          <Route exact path='/chat' component={Chat}/>
+          <Route exact path='/portfolio' component={Portfolio}/>
           <Route exact path='/signin' component={SignIn}/>
           <Route exact path='/signout' component={SignOut}/>
           <Route exact path='/' component={SignUp}/>
